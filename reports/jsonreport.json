@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-08T07:29:02.041Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4473001800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooked.init()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login to Uniform Website",
+        "description": "",
+        "id": "login;login-to-uniform-website;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 920134100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooked.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User navigates to uniform website",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user enters the \"admin\" and \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Admin@123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.user_enters_the_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User clicks on the login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Dashboard is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@uniform"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/demo.feature",
+    "tags": []
+  }
+]
