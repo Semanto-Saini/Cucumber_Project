@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
         monochrome = true,
 //        tags={"@addaffilliate","@filter"},
 //        dryRun=true,
-        plugin = {"pretty"} //"html:reports/cucumber-pretty", "json:reports/jsonreport.json", "junit:reports/Cucumber.xml"
+        plugin = {"pretty","html:reports/cucumber-pretty"} //"json:reports/jsonreport.json", "junit:reports/Cucumber.xml"
         )
 public class TestRunner {
 
